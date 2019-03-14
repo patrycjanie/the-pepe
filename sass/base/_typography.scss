@@ -1,0 +1,55 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+
+   
+}
+
+.navigation {
+    text-transform: uppercase;
+
+    &__name {
+        font-family: 'Allura',sans-serif;
+        text-transform: none;
+        font-size: 5rem;
+        transform: skewY(-5deg);
+    }
+}
+
+.header, 
+.navigation__link {
+    color: $color-primary-beige;
+}
+
+.heading-primary {
+    font-size: 5rem;
+    font-weight: 400;    
+    line-height: 1.1;
+
+    &--sub,
+    &--main {
+        display: block;
+    }
+
+    &--main {
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 4px;
+
+        &::after {
+            content: '';
+            background-image: url(/img/restaurant-cutlery-symbol-of-a-cross.png);
+            background-size: contain;
+            display: block;
+            height: 40px;
+            width: 40px;
+            margin: 20px auto;
+            
+        }
+    }
+
+    &--sub {
+        font-family: 'Allura', sans-serif;
+    }
+}

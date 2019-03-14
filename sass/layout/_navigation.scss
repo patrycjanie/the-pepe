@@ -1,0 +1,48 @@
+.navigation {
+    font-size: 1.6rem;
+    height: 7rem;
+    display: flex; 
+    
+    justify-content: space-between;
+    align-items: center;
+    
+    &__name {
+        display: flex;
+        margin-left: 4rem;
+        
+
+        height: 100%;
+
+
+    }
+
+    
+
+    &__list {
+        display: flex;
+        
+       
+          
+    }
+
+    &__item {
+        list-style-type: none;
+        padding: 1rem 1.5rem; 
+
+        // &:hover {
+
+        // }
+    }
+
+    &__social-media {
+        display: flex;
+        justify-self: flex-end;
+
+        &:last-of-type {
+            margin-right: 4rem;
+        }
+       
+    }
+
+   
+}

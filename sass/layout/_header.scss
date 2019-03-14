@@ -1,0 +1,20 @@
+.header {
+    height: 100vh;
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, .9) 15% ,
+        rgba($color-primary-red--dark, .85) 75%,
+        rgba($color-primary-red, 0.5)), url(/img/header_background.jpg); 
+
+    background-size: cover;
+
+    &__text-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+}
+
