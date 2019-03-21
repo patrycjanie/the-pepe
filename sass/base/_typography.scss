@@ -19,12 +19,11 @@ body {
 
 .header, 
 .navigation__link {
-    color: $color-primary-beige;
+    color: white;
 }
 
-.heading-primary {
-    font-size: 5rem;
-    font-weight: 400;    
+.heading-primary,
+.heading-secondary { 
     line-height: 1.1;
 
     &--sub,
@@ -42,8 +41,6 @@ body {
             background-image: url(/img/restaurant-cutlery-symbol-of-a-cross.png);
             background-size: contain;
             display: block;
-            height: 40px;
-            width: 40px;
             margin: 20px auto;
             
         }
@@ -51,5 +48,31 @@ body {
 
     &--sub {
         font-family: 'Allura', sans-serif;
+    }
+}
+
+.heading-primary {
+    font-size: 5rem;
+    font-weight: 400;
+
+    &--main {
+        &::after {
+            height: 40px;
+            width: 40px;
+        }
+    }
+}
+
+.heading-secondary {
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 30px 0;
+
+    &--main {
+        &::after {
+            height: 20px;
+            width: 20px;
+        }
     }
 }

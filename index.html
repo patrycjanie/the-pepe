@@ -7,6 +7,11 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!-- glide -->
+        <script src="js/glide.min.js"></script>
+        <link rel="stylesheet" href="css/glide.core.min.css">
+        <!-- <link rel="stylesheet" href="css/glide.theme.min.css"> -->
+
         <!-- google fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
@@ -16,6 +21,9 @@
 
         <!-- custom css -->
         <link rel="stylesheet" href="/css/style.css">
+
+        <!-- jQuery -->
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     </head>
     <body>
 
@@ -55,10 +63,67 @@
         </header>
        
        <main>
+        <section class="section-services">
+            <h2 class="heading-secondary">
+                <span class="heading-secondary--sub">Discover</span> 
+                <span class="heading-secondary--main">our services</span>
+            </h2>
+
+            <div class="glide-container">
+                    <div class="row glide">
+                            <div class="glide__track" data-glide-el="track">
+                                <div class="glide__slides">
+                                    <figure class="service glide__slide">
+                                        <div class="service__shape">
+                                            <img class="service__img" src="img/breakfast.jpg" alt="eggs on bread slice">
+                                            <p class="service__animation">view menu</p>            
+                                        </div>
+                                        <figcaption class="service__caption">Breakfast</figcaption>
+                                    </figure>
+                    
+                                    <figure class="service glide__slide">
+                                        <div class="service__shape">
+                                            <img class="service__img" src="img/lunch.jpg" alt="eggs on bread slice">
+                                            <p class="service__animation">view menu</p>            
+                                        </div>
+                                        <figcaption class="service__caption">Lunch</figcaption>
+                                    </figure>
+                    
+                                    <figure class="service glide__slide">
+                                        <div class="service__shape">
+                                            <img class="service__img" src="img/dinner.jpg" alt="eggs on bread slice">
+                                            <p class="service__animation">view menu</p>            
+                                        </div>
+                                        <figcaption class="service__caption">Dinner</figcaption>
+                                    </figure>
+                    
+                                    <figure class="service glide__slide">
+                                        <div class="service__shape">
+                                            <img class="service__img" src="img/breakfast.jpg" alt="eggs on bread slice">
+                                            <p class="service__animation">view menu</p>            
+                                        </div>
+                                        <figcaption class="service__caption">Drinks</figcaption>
+                                    </figure>
+                    
+                                    <figure class="service glide__slide">
+                                        <div class="service__shape">
+                                            <img class="service__img" src="img/breakfast.jpg" alt="eggs on bread slice">
+                                            <p class="service__animation">view menu</p>            
+                                        </div>
+                                        <figcaption class="service__caption">Drinks</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+            </div>
+        </section>
+
         
 
        </main>
         
-        <script src="" async defer></script>
+        <script src="js/index.js"></script>
     </body>
 </html>

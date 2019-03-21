@@ -1,0 +1,10 @@
+.slider {
+    &__slides {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .invisible {
+        display: none;
+    }
+}

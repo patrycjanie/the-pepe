@@ -1,0 +1,59 @@
+.service {
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+    
+    align-items: center;
+
+
+    &__shape {
+        width: 15rem;
+        height: 15rem;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+
+        
+    }
+
+    &__img {
+        height: 100%;
+        transform: translateX(-4rem) scale(1.4);
+        backface-visibility: hidden;
+        transition: all .5s;
+    }
+
+    &__caption {
+        font-size: 1.7rem;
+        color: black;
+        display: block;
+        text-align: center;
+    }
+
+    &__animation {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        color: white;
+        text-transform: uppercase;
+        text-decoration: underline;
+        font-size: 1.5rem;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;
+        min-width: 10rem;
+    }
+
+    &:hover &__animation {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img {
+        transform: translateX(-5rem) scale(1.1);
+        filter: blur(3px) brightness(50%);
+    }
+}

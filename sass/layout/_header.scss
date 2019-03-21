@@ -1,12 +1,13 @@
 .header {
     height: 100vh;
     background-image: linear-gradient(
-        to bottom, 
-        rgba(0, 0, 0, .9) 15% ,
-        rgba($color-primary-red--dark, .85) 75%,
-        rgba($color-primary-red, 0.5)), url(/img/header_background.jpg); 
+        to right bottom, 
+        rgba(0, 0, 0, 1) 0% ,
+        rgba($color-primary-red--dark, .75) 70%,
+        rgba(0, 0, 0, .9) 100%), url(/img/header_background.jpg); 
 
     background-size: cover;
+    background-position: center bottom;
 
     &__text-box{
         position: absolute;
