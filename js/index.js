@@ -230,7 +230,7 @@
       content: contentString
     });
 
-    var iconPepe = '/img/dinner.png';
+    var iconPepe = 'img/dinner.png';
 
     var marker = new google.maps.Marker({position: pepe, 
       map: map,
