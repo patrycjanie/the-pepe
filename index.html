@@ -58,6 +58,8 @@
                     <span class="heading-primary--sub">Welcome to</span> 
                     <span class="heading-primary--main">The Pepe</span>
                 </h1>
+                <p class="subheading-primary">We serve only the finest ingredients!</p>
+                <a href="#book" class="btn btn--white">Book your table</a>
             </div>
             
         </header>
@@ -120,10 +122,94 @@
             </div>
         </section>
 
+        <section id="book" class="section-book">
+            <div class="row">
+                <div class="book">
+                    <div class="book__form">
+                        <form action="#" class="form">
+
+                            <div class="u-margin-bottom-medium">
+                                <h2 class="heading-secondary">
+                                        <span class="heading-secondary--sub">Reservation</span> 
+                                        <span class="heading-secondary--main">online booking</span>
+                                </h2>
+                            </div>
+                                    
+                            <div class="form__group">
+                                <select class="form__input" id="party-size" required>
+                                    <option value="1">1 person</option>
+                                    <option value="2">2 people</option>
+                                    <option value="3">3 people</option>
+                                    <option value="4">4 people</option>
+                                    <option value="5">5 people</option>
+                                    <option value="6">6 people</option>
+                                    <option value="7">7 people</option>
+                                    <option value="8">8 people</option>
+                                    <option value="9">9 people</option>
+                                    <option value="10">10 people</option>
+                                    <option value="more">more</option>
+                                </select>
+                                <!-- <label for="party-size" class="form__label">
+                                    Party-size
+                                </label> -->
+                            </div>
+
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                                <label for="email" class="form__label">
+                                    Email address
+                                </label>
+                            </div>
+                            
+                            <!-- <div class="form__group">
+                                <input type="text" id="datepicker">
+                                <input type="date" class="form__input" placeholder="Email address" id="date" value="2019-01-01"
+                                min="2010-01-01" max="2018-12-31" required>
+                                <label for="email" class="form__label">
+                                    Email address
+                                </label>
+                            </div> -->
+
+                            <!-- <div class="form__group u-margin-bottom-medium">
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="small" name="size">
+                                    <label for="small" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                            Small tour groups
+                                    </label>
+                                </div>
+
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="large" name="size">
+                                    <label for="large" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Large tour groups
+                                    </label>
+                                </div>
+                            </div> -->
+
+                            <div class="form__group">
+                                <button class="btn btn--green">
+                                    Next step &rarr;
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-contact">
+            <div id="map"></div>
+        </section>
+
         
 
        </main>
         
         <script src="js/index.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_V2HkNyaUY9B8NuG7cRsYPa2Bc-SAw5I&callback=initMap&language=pl&region=PL"
+    async defer></script>
     </body>
 </html>

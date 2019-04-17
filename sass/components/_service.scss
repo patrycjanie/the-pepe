@@ -2,7 +2,7 @@
     width: 15rem;
     display: flex;
     flex-direction: column;
-    margin: 10px 30px;
+    margin: 3rem .5rem;
     
     align-items: center;
 
@@ -14,7 +14,17 @@
         overflow: hidden;
         border-radius: 50%;
 
-        
+        &:hover::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 5px;
+            bottom: 5px;
+            left: 5px;
+            right: 5px;
+            border-radius: 50%;
+            border: .75px solid white;
+        }
     }
 
     &__img {
