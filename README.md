@@ -1,4 +1,4 @@
-# The Pepe
+# The Pepe - in progress
 Modern looking page for fictional restaurant. 
 
 ## Technologies
